@@ -3,7 +3,7 @@ ext {
             compileSdkVersion             : 31,
             buildToolsVersion             : "29.0.2",
             minSdkVersion                 : 19,
-            targetSdkVersion              : 33,
+            targetSdkVersion              : 33, //Update target SDK version to support Android 13
             versionCode                   : 58,
             versionName                   : "v2.7.3-rc10",
             ucropVersionCode              : 24,
