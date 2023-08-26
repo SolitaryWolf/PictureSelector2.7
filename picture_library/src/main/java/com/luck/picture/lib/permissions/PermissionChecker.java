@@ -28,6 +28,7 @@ public class PermissionChecker {
      * @return
      */
     public static boolean checkSelfPermission(Context ctx, String permission) {
+        // No need to request storage perrmision for Android 13
         if (Build.VERSION.SDK_INT >= 33 && permission == Manifest.permission.READ_EXTERNAL_STORAGE || permission == Manifest.permission.WRITE_EXTERNAL_STORAGE) {
             return true;
         }
